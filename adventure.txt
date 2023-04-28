@@ -1,0 +1,131 @@
+{
+   "1":{
+      "prompt":"Good Morning! Would you like to wake up or sleep in?",
+      "actions":{
+         "Sleep in":{
+            "location":"2",
+            "points":-15
+         },
+         "Wake up":{
+            "location":"3",
+            "points":15
+         }
+      }
+   },
+   "2":{
+      "prompt":"You overslept and missed class. You also missed the pop quiz that Aric Bills assigned the class. You really needed these extra points to pass the class, but unforturnatly you missed the points and failed the class :(",
+      "actions":{
+         "Doesn't matter you lose":{
+            "location":"1",
+            "points":-85
+         }
+      }
+   },
+   "3":{
+      "prompt":"Rise and shine! You woke up and you are ready to start your day!",
+      "actions":{
+         "Go to living room":{
+            "location":"4",
+            "points":5
+         }
+      }
+   },
+   "4":{
+      "prompt":"Breakfast time! Will you be making your own breakfast or go to McDonald's for a breakfast sandwich?",
+      "actions":{
+         "Go to McDonalds":{
+            "location":"5",
+            "points":-10
+         },
+         "Make breakfast":{
+            "location":"6",
+            "points":10
+         }
+      }
+   },
+   "5":{
+      "prompt":"You ran into your friend at McDonalds and now you're running late. Will you skip or come to class late?",
+      "actions":{
+         "Skip Class":{
+            "location":"7",
+            "points":5
+         }
+      }
+   },
+   "6":{
+      "prompt":"Great choice! you made a healthy breakfast and made it to class on time! Aric assigned us a pop quiz today and you got an A!",
+      "actions":{
+         "Do the griddy in celebration":{
+            "location":"8",
+            "points":25
+         }
+      }
+   },
+   "7":{
+        "prompt": "You skipped class and lost much needed points from a pop quiz that was assigned. You failed the class and thus, your day. :(",
+        "actions":{
+	   "restart":{
+              "location":"1",
+              "points":-85
+         }
+      }
+   },
+
+   "8":{
+      "prompt":"You're done with your classes for the day! Would you like to go out to drink with friends or get some homework done?",
+      "actions":{
+         "Get Some Homework Done":{
+            "location":"9",
+            "points":10
+         },
+         "Go Out To Drink":{
+            "location":"10",
+            "points":-10
+         }
+      }
+   },
+   "9":{
+      "prompt":"You studied hard! Will you go to sleep or go out and drink?",
+      "actions":{
+         "Sleep":{
+            "location":"12",
+            "points":10
+         },
+         "Go out and Drink":{
+            "location":"10",
+            "points":8
+         }
+      }
+   },
+   "10":{
+      "prompt":"You had a great time going out, but it's getting late. Do you want to stay out or get some rest?",
+      "actions":{
+         "Get Some Rest":{
+            "location":"12",
+            "points":10
+         },
+         "Stay Out":{
+            "location":"11",
+            "points":-8
+         }
+      }
+   },
+   "11":{
+      "prompt":"You stayed out too late and drank too much! You drunk texted your ex and told them you still love them. The feeling was not mutual. On top of that, you woke up hungover and missed your very important interview and lost the job opporunity. You lost all motivation in life and cried yourself to sleep every night after that. :(",
+      "actions":{
+         "DAY FAILURE":{
+            "location":"1",
+            "points":-85
+         }
+      }
+   },
+   "12":{
+      "prompt":"You had a great day! Sleep well! You woke up the next morning feeling refreshed! You were prepared for a very important job interview that you had. You got the job! Congradulations! :)",
+      "actions":{
+         "win":{
+            "location":"1",
+            "points":5
+         }
+      }
+   }
+}
